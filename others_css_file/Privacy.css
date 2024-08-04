@@ -1,0 +1,13 @@
+.privacy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #e9eaee;
+    padding:  50px 0;
+    .main_privacy{
+        width: 80%;
+        p{
+            padding-left: 10px;
+        }
+    }
+}

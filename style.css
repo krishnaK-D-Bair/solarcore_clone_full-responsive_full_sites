@@ -1,0 +1,338 @@
+/* import css */
+
+@import url('./others_css_file/about.css');
+@import url('./others_css_file/solarcore-marketplace.css');
+@import url('./others_css_file/Contact_Us.css');
+@import url('./others_css_file/Content_Library.css');
+@import url('./others_css_file/Events_and_Shows.css');
+@import url('./others_css_file/Industry-Partners.css');
+@import url('./others_css_file/Media-Room.css');
+@import url('./others_css_file/Privacy.css');
+@import url('./others_css_file/solarcore-marketplace.css');
+@import url('./others_css_file/Terms_and_Conditions.css');
+@import url('./others_css_file/Warranty.css');
+
+
+
+
+
+
+
+
+/* global style for button  */
+
+
+
+h2{
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+}
+h1,h3{
+    font-family: "Oswald", sans-serif;
+}
+
+p{
+    
+    font-family: "Gupter", serif;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+button{
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+   & a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+    }
+    
+}
+button:hover{
+    box-shadow: 2px 2px 4px black;
+}
+
+
+
+
+
+
+/* end of global style */
+
+
+
+
+.navigation{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    & .icon{
+        display: none;
+    }
+    & h1{
+
+        font-size: min(4vh, 4vw);
+        cursor: pointer;
+        padding: 5px;
+        border-bottom: 2px solid black;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+    }
+    & .navigation-ul{
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: red; */
+        height: 50px;   
+        width: 100%;     
+        font-family: "Oswald", sans-serif;
+        
+        & li{
+
+            list-style-type: none;
+            & a{
+                text-decoration: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: calc(100vh - 106px);
+    
+    & .img-slider{
+        background-image: url(./photos/shoes.jpg);
+        background-position: center;
+        background-size: cover;
+        /* background-attachment: fixed; */
+        & .btn{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            padding: 20px ;
+        }
+
+    }
+
+    .main-paragraph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e9eaee;
+        p{
+            text-align: center;
+            width: 50%;
+            font-size: min(4vh, 4vw);
+            font-weight: bolder;
+            
+        }
+    }
+
+}
+
+.sc-form{
+    background-image: url(./photos/carpet.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & h1{
+        font-size: min(6vh, 6vw);   
+        color: #fff;    
+        text-shadow: 2px 2px 4px black;
+    }
+
+    
+}
+
+
+
+.container{
+    width: 100%;
+    /* height: 250vh; */
+    /* height: max(150vw, 250vh); */
+    height: min(auto ,max(150vw, 250vh));
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    /* gap: 15px; */
+    & .items{
+        background-color: #e9eaee;
+    }
+
+
+
+    .items{
+        display: grid;
+        /* height: 50vh; */
+        height: max(100% , 50vh);
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        /* place-items: center; */
+        & .container-img{
+            background-image: url(./photos/carpet.jpg);
+            width: 100%;
+            height: 50vh;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        h2{
+            font-size: 2rem;
+            font-family: "Oswald", sans-serif;
+        }
+
+        p{
+            
+            font-family: "Gupter", serif;
+        }
+
+        h2 , p , button{
+            margin: 20px;
+        }
+    } 
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    color: white;
+    width: 100%;
+    padding: 0 ;
+    margin: 0;
+    background-color: black;
+
+    ul{
+        display: flex;
+        /* width: 100%; */
+        padding: 0 10px;
+        margin: 0;
+        li{
+            /* margin: 0 10px; */
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: white;
+                padding: 5px;
+            }
+            i{
+                
+                
+                font-size: 1.5rem;
+               
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    .navigation{
+
+        & .icon{
+            display: block;
+            /* width: 100%; */
+            color: red;
+            position: absolute;
+            left: 10px;
+            cursor: pointer;
+        }
+        h1{
+            margin-left: auto;
+            border: none;
+        }
+
+        & .navigation-ul{
+           display: none;
+           flex-direction: column;
+           /* background-color: rgb(26, 8, 187); */
+           position: absolute;
+           top: 9%;
+           left: 0;
+           z-index: 1;
+           & li{
+            background-color: rgba(12, 12, 12 ,.7);
+            & a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+
+
+       }
+       
+       }
+       .active{
+        display: block;
+       }
+    }
+    
+   
+    .container{
+        height: max(450vh,310vw);
+        .items{
+            display: grid;
+            align-items:end;
+            height: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content min-content;
+        }
+    }
+
+    .items:nth-child(even) .container-img {
+        order: -1;
+      }
+
+   .footer{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+
+   }
+
+}
+
+
+
+@media screen and (max-width:740px)
+{
+    .container{
+        height: clamp(450vh,310vw,500vw);
+    }
+}
+

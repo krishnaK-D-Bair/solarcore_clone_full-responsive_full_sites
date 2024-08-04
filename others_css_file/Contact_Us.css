@@ -1,0 +1,64 @@
+.future{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .info{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #e9eaee;
+        
+    }
+    .img{
+        background-image: url(../photos/mahavir-shah-RZIdbOoF6gw-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        color: #fff;
+        /* font-size: max(4vh , 2vw); */
+
+        h1{
+            border: 2px solid #fff;
+            padding: 20px;
+            font-size: max(2vw , 3vh);
+        }
+        p{
+            margin-top: 20px;
+            font-size: 2vh;
+        }
+        
+       
+
+    }
+
+    
+}
+
+.from{
+    width: 100%;
+    height: 100vh;
+    background-color: #e9eaee;
+    display: flex;
+    justify-content: center;
+    
+   form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    /* height: 100%; */
+    #fname ,#lname{
+        width: 50%;
+    }
+   }
+}
